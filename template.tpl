@@ -1,3 +1,11 @@
+___TERMS_OF_SERVICE___
+
+By creating or modifying this file you agree to Google Tag Manager's Community
+Template Gallery Developer Terms of Service available at
+https://developers.google.com/tag-manager/gallery-tos (or such other URL as
+Google may provide), as modified from time to time.
+
+
 ___INFO___
 
 {
@@ -8,13 +16,18 @@ ___INFO___
   "displayName": "AxiSolver",
   "brand": {
     "id": "ataraxis",
-    "displayName": "Ataraxis",
-    "thumbnail": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNGY0NmU1Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjOGI1Y2Y2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9InVybCgjYSkiLz48dGV4dCB4PSIzMiIgeT0iNDQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjgwMCIgZm9udC1zaXplPSIzNiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QTwvdGV4dD48L3N2Zz4="
+    "displayName": "Ataraxis"
   },
-  "description": "Installe AxiSolver, l'assistant IA qui résout les problèmes de vos visiteurs 24h/24. Entrez votre site_id et le widget apparaît sur toutes vos pages.",
-  "categories": ["CHAT", "ANALYTICS"],
-  "containerContexts": ["WEB"]
+  "description": "Installe AxiSolver, l\u0027assistant IA qui résout les problèmes de vos visiteurs 24h/24. Entrez votre site_id et le widget apparaît sur toutes vos pages.",
+  "categories": [
+    "CHAT",
+    "ANALYTICS"
+  ],
+  "containerContexts": [
+    "WEB"
+  ]
 }
+
 
 ___TEMPLATE_PARAMETERS___
 
@@ -30,13 +43,16 @@ ___TEMPLATE_PARAMETERS___
       },
       {
         "type": "REGEX",
-        "args": ["^[a-zA-Z0-9_-]{3,64}$"],
+        "args": [
+          "^[a-zA-Z0-9_-]{3,64}$"
+        ],
         "errorMessage": "Le site_id doit contenir uniquement des lettres, chiffres, tirets ou underscores (3 à 64 caractères)."
       }
     ],
     "help": "Vous trouverez votre site_id dans votre dashboard AxiSolver sur https://axisolver.app/dashboard."
   }
 ]
+
 
 ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
@@ -58,6 +74,7 @@ const url = 'https://axisolver.app/v1.js';
 const urlAvecSiteId = url + '?siteId=' + encodeUriComponent(siteId);
 
 injectScript(urlAvecSiteId, data.gtmOnSuccess, data.gtmOnFailure, 'axisolver-loader');
+
 
 ___WEB_PERMISSIONS___
 
@@ -90,9 +107,11 @@ ___WEB_PERMISSIONS___
   }
 ]
 
+
 ___TESTS___
 
 scenarios: []
+
 
 ___NOTES___
 
@@ -102,3 +121,6 @@ Soumission : https://gallery.tagmanager.google.com/#/gallery
 - Repo GitHub public requis
 - Review Google ~1-2 semaines
 - Après validation : apparaît dans la Gallery, installable en 3 clics par n'importe quel utilisateur GTM
+
+
+
