@@ -1,0 +1,5 @@
+homepage: "https://axisolver.app"                                                    
+  documentation: "https://axisolver.app/dashboard/installation"                        
+  versions:                                                                            
+    - sha: 2dddd8042edd1019de1219b961dba6578e5d7416                                       
+      changeNotes: Initial release — AxiSolver chat widget via GTM.
